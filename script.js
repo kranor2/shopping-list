@@ -1,6 +1,6 @@
-const list = document.querySelectorAll("ul");
-const textbox = document.querySelectorAll("input");
-const button = document.querySelectorAll("button");
+const list = document.querySelector("ul");
+const textbox = document.querySelector("input");
+const button = document.querySelector("button");
 
 button.addEventListener("click", () => {
     const newItem = textbox.value;
@@ -19,5 +19,6 @@ button.addEventListener("click", () => {
     deleter.addEventListener("click", () => {
         list.removeChild(listItem);
     });
+
     textbox.focus();
 });
